@@ -1,19 +1,39 @@
 body {
+  height: 100vh;
   text-align: center;
   background-color: #011F3F;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  
+
+
 }
 
+#overlay{
+  position: absolute;
+top: 0px;
+left:0px;
+  width: 100vw;
+  height: 100vh;
+  background-color:rgba(0, 0, 0,.5);
+
+
+}
 #level-title,h1{
   font-family: 'Press Start 2P', cursive;
+  margin:5%;
   font-size: 3rem;
-  margin:  5%;
+
+  line-height: 5rem;
   color: #FEF2BF;
 }
 
 .container {
-  display: block;
+  display: flex;
   width: 50%;
-  margin: auto;
+
 
 }
 

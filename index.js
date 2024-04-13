@@ -22,6 +22,13 @@ $(document).on("keydown",()=>{
     started=true;
   }
  })
+$("#overlay").on("click",()=>{ 
+  if(!started){
+    $("h1").text("level "+ level)
+    nextSequence();
+    started=true;
+    $("#overlay").css("z-index",'-1')
+  }})
 
 $(".btn").on('click',(e)=>{
         boxClicked = e.target.id 
@@ -31,7 +38,6 @@ $(".btn").on('click',(e)=>{
                  addAnime(boxClicked)
                 MakeAudio(boxClicked)
                  if(i===boxId.length){
-                    console.log("im here")
                     level++;
                     $("h1").text("level "+ level)
                     i=0;
@@ -50,7 +56,7 @@ $(".btn").on('click',(e)=>{
            }, 200); 
            started =false;
         
-       
+           $("#overlay").css("z-index",'1')
 
         }
     })
