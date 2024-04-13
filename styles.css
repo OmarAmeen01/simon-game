@@ -2,10 +2,8 @@ body {
 
   text-align: center;
   background-color: #011F3F;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
+display: grid;
+place-items: center;
   
 
 
@@ -23,22 +21,23 @@ left:0px;
 }
 #level-title,h1{
   font-family: 'Press Start 2P', cursive;
-  margin:5%;
   font-size: 3rem;
-
+z-index: 2;
   line-height: 5rem;
   color: #FEF2BF;
+  padding:0 2rem;
 }
 
 .container {
-  display: flex;
-  width: 50%;
+padding:0 2rem;
+display: flex;
 
+  width: 50%;
 
 }
 
 .btn {
-  margin: 25px;
+  margin:10px;
   display: inline-block;
   height: 200px;
   width: 200px;
