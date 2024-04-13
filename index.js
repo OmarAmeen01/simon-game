@@ -49,7 +49,7 @@ $(".btn").on('click',(e)=>{
             const overAudio = new Audio("./sounds/wrong.mp3")
             overAudio.play()
             $("h1").text("Game over press any key to restart")
-            level= 0;
+            level= 1;
             $('body').addClass("game-over")
            setTimeout(() => {
             $('body').removeClass("game-over") 

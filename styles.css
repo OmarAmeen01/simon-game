@@ -1,12 +1,13 @@
 body {
+height: 100vh;
 
   text-align: center;
   background-color: #011F3F;
 display: grid;
+grid-template-rows: 300px 300px;
+gap: 50px;
+align-content: center;
 place-items: center;
-  
-
-
 }
 
 #overlay{
